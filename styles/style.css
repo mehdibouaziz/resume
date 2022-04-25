@@ -1,0 +1,242 @@
+:root {
+    --margins: 1cm;
+    --a4width: 21cm;
+    --a4height: 29.7cm;
+    --w100: calc(var(--a4width) - 2*var(--margins));
+    --h100: calc(var(--a4height) - 2*var(--margins));
+
+    --color-primary: rgb(67, 139, 67);
+    --color-secondary: rgb(37, 82, 37);
+    --color-light: rgb(103, 165, 103);
+
+    --header-height: 4cm;
+    --header-horizontal-padding: 0.5cm;
+    --header-vertical-padding: 0.3cm;
+
+    --contents-height: calc(var(--h100) - var(--header-height) -2*var(--header-vertical-padding));
+}
+
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.canvas{
+    border: dotted 1px rgb(182, 182, 182);
+    width: var(--w100);
+    height: var(--h100);
+    padding: var(--margins);
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background-color: var(--color-primary);
+    width: calc(var(--w100) - 2*var(--header-horizontal-padding));
+    
+    padding: var(--header-vertical-padding) var(--header-horizontal-padding);
+    margin: 0;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.QR{
+    width: calc(var(--w100)*0.22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.QR-code{
+    width: 3.5cm;
+}
+.bio{
+    width: calc(var(--w100)*0.68);
+}
+
+.name{
+    margin: 0.1cm 0 0 0;
+    font-weight: 300;
+    font-size: 2em;
+}
+.title{
+    margin: 0;
+    margin-top: 0.1cm;
+    padding-bottom: 0.2cm;
+    margin-bottom: 0.3cm;
+    font-weight: 300;
+    font-size: 1.1em;
+    border-bottom: solid 1px white;
+
+    width: calc(var(--w100)/2.5)
+}
+.header p{
+    font-size: 0.8em;
+    margin: 0 0 0.05cm 0;
+}
+.header p:last-child{
+    margin: 0 0 0.2cm 0;
+}
+
+
+.contents{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:0.5cm;
+}
+
+
+/* ----------- SKILLS COLUMN ---------------- */
+.left_column{
+    /* background-color: aquamarine; */
+    width: calc(var(--w100)*0.25 - 0.25);
+
+    font-size: 0.8em;
+
+    padding-top: 0.5cm;
+}
+.left_column p{
+    margin:0;
+    margin-bottom: 0.2cm;
+}
+.left_column a{
+    color: black;
+    text-decoration: none;
+
+}
+.left_column i{
+    color: var(--color-primary);
+    display: ;
+}
+.left_column h3{
+    color: var(--color-secondary);
+    font-size: 1.5em;
+    font-weight: 500;
+    border-bottom: solid 1px var(--color-secondary);
+    margin: 0.5cm 0 0.3cm 0;
+}
+.skill{
+    margin: 0.05cm !important;
+}
+.progress-bar{
+    border: solid 1px var(--color-primary);
+    height: 0.2cm;
+    width: calc(var(--w100)*0.25 - 0.25);
+    margin: 0 0 0.3cm 0;
+}
+.progress-fill{
+    height: 0.2cm;
+    background-color: var(--color-primary);
+}
+.hobbies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 0.15cm 0;
+}
+.hobbies i {
+    font-size: 1.4em;
+    display: inline;
+    margin: 0;
+    color: var(--color-primary);
+}
+.hobbies p {
+    display: inline;
+    margin: 0 0 0 0.15cm;
+}
+
+/* ----------- MAIN CONTENT ---------------- */
+.right_column{
+    /* background-color: coral; */
+    width: calc(var(--w100)*0.75);
+    height: 10cm;
+
+}
+.right_column h3{  /* section name */
+    color: var(--color-secondary);
+    font-size: 1.3em;
+    font-weight: 500;
+    border-bottom: solid 1px var(--color-secondary);
+    margin: 0.8cm 0 0 0;
+}
+.right_column h3:first-child{
+    margin: 0.5cm 0 0 0;
+}
+
+.right_column h4{  /* job position */
+    color: var(--color-primary);
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0.4cm 0 0 0;
+}
+.right_column .company {
+    margin: 0 0 0 0;
+    font-size: 1em;
+    display: inline;
+}
+.right_column .course-title {
+    margin: 0.4cm 0 0 0;
+}
+.right_column .course {
+    display: inline;
+    margin: 0.1cm 0 0 0;
+    font-size: 0.9em;
+}
+.right_column .course-info {
+    display: inline;
+    margin: 0.1cm 0 0 0;
+    font-size: 0.8em;
+}
+.right_column .time-place {
+    margin: 0.05cm 0 0 0;
+    font-size: 0.8em;
+    display: inline;
+}
+.right_column ul {
+    margin: 0.1cm 0 0 0;
+    font-size: 0.8em;
+}
+.right_column li {
+    margin: 0 0 0.05cm 0;
+    text-align: justify;
+}
+.inline{
+    display: inline;
+}
+
+.link{
+    color: var(--color-light);
+    font-size: 0.7em;
+    vertical-align: text-top;
+}
+.link-grey{
+    color: rgb(71, 71, 71);
+}
+
+/* ----------- FOOTER ---------------- */
+.rodo {
+    position: absolute;
+    top: calc(var(--a4height) - 1.2cm - var(--margins));
+    width: var(--w100);
+    text-align: right;
+
+    height: 1.2cm;
+
+    margin: 0 0 var(--margins) 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.rodo p{
+    color: rgb(92, 92, 92);
+    font-size: 0.65em;
+    margin: 0;
+}
