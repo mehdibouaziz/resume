@@ -19,6 +19,7 @@
 body{
     margin: 0;
     background-color: rgb(255, 255, 255);
+    
 }
 
 .canvas{
@@ -30,9 +31,41 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.header-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.9cm;
+}
+
+.portrait_div {
+    width: calc((var(--w100) - 2*var(--header-horizontal-padding))*0.3 );
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.portrait_img {
+    width: calc((var(--w100) - 2*var(--header-horizontal-padding))*0.26 );
+    border-radius: 50%;
+}
+
+.QR{
+    position: absolute;
+    top: 1.45cm;
+    left: 16.9cm;
+
+    width: calc(var(--w100)*0.23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.QR-code{
+    width: 1.8cm;
+}
+
 .header{
     background-color: var(--color-primary);
-    width: calc(var(--w100) - 2*var(--header-horizontal-padding));
     
     padding: var(--header-vertical-padding) var(--header-horizontal-padding);
     margin: 0;
@@ -41,20 +74,13 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-radius: 8px 0 0 8px;
 
 }
 
-.QR{
-    width: calc(var(--w100)*0.23);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.QR-code{
-    width: 3.8cm;
-}
 .bio{
-    width: calc(var(--w100)*0.68);
+    width: calc(var(--w100)*0.67);
+    margin-right: 40px;
 }
 
 .name{
@@ -73,8 +99,10 @@ body{
 
     width: calc(var(--w100)/2.5)
 }
+
+
 .header p{
-    font-size: 0.8em;
+    font-size: 0.75em;
     margin: 0 0 0.05cm 0;
     text-align: justify;
 }
@@ -88,7 +116,7 @@ body{
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap:0.5cm;
+    gap:1cm;
 }
 
 
@@ -222,7 +250,7 @@ body{
 /* ----------- FOOTER ---------------- */
 .rodo {
     position: absolute;
-    top: calc(var(--a4height) - 1.2cm - var(--margins));
+    top: calc(var(--a4height) - 0.8cm - var(--margins));
     width: var(--w100);
     text-align: right;
 
@@ -236,7 +264,7 @@ body{
 }
 
 .rodo p{
-    color: rgb(92, 92, 92);
-    font-size: 0.65em;
+    color: rgb(95, 95, 95);
+    font-size: 0.56em;
     margin: 0;
 }
