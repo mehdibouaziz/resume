@@ -244,6 +244,19 @@ body{
 .work-title-link {
     text-decoration: none;
 }
+.link{
+    vertical-align: top;
+}
+.link-arrow {
+    color: var(--color-light);
+    margin: 0 0 0 0.05cm;
+    font-size: 0.7em;
+}
+.link-git{
+    color: rgb(124, 124, 124);
+    margin: 0 0 0 0.1cm;
+    font-size: 0.8em;
+}
 
 .work-place-div {
     margin: 0 0 0.05cm 0;
@@ -310,14 +323,8 @@ body{
     display: inline;
 }
 
-.link{
-    color: var(--color-light);
-    font-size: 0.7em;
-    vertical-align: text-top;
-}
-.link-grey{
-    color: rgb(71, 71, 71);
-}
+
+
 
 /* ----------- FOOTER ---------------- */
 .rodo {
