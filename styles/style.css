@@ -152,6 +152,31 @@ body{
 .portfolio-link {
     font-size: 0.95em !important;
 }
+.diploma-name {
+    font-size: 1.2em;
+    margin-bottom: 0 !important;
+}
+.university {
+    font-size: 0.9em;
+    margin-bottom: 0 !important;
+}
+.diploma-date {
+    font-size: 0.9em;
+}
+.certif-info {
+    display: inline;
+}
+.certif-link {
+    display: inline;
+}
+.certif-link-icon {
+    vertical-align: middle;
+    font-size: 0.7em;
+    margin-left: 0.1cm;
+    color: #444 !important;
+}
+
+
 .skill{
     margin: 0.05cm !important;
 }
@@ -205,31 +230,74 @@ body{
     color: var(--color-primary);
     font-size: 1em;
     font-weight: 500;
+    display: inline;
+}
+.right_column .work-duration {
+    display: inline;
+    font-size: 0.9em;
+    float: right;
+    color: var(--color-light);
+}
+.work-title-div {
     margin: 0.4cm 0 0 0;
+}
+.work-title-link {
+    text-decoration: none;
+}
+
+.work-place-div {
+    margin: 0 0 0.05cm 0;
 }
 .right_column .company {
     margin: 0 0 0 0;
-    font-size: 1em;
-    display: inline;
-}
-.right_column .course-title {
-    margin: 0.4cm 0 0 0;
-}
-.right_column .course {
-    display: inline;
-    margin: 0.1cm 0 0 0;
     font-size: 0.9em;
-}
-.right_column .course-info {
     display: inline;
-    margin: 0.1cm 0 0 0;
+}
+.right_column .divider {
+    margin: 0 0.15cm;
     font-size: 0.8em;
+    display: inline;
+    color: #ccc;
 }
 .right_column .time-place {
     margin: 0.05cm 0 0 0;
     font-size: 0.8em;
     display: inline;
 }
+
+.right_column .skills {
+    margin: 0 0 0 0;
+    font-size: 0.9em;
+}
+.right_column .project-pitch {
+    margin: 0 0 0.1cm 0;
+    font-size: 0.9em;
+}
+.right_column .project-info-line {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0.1cm 0;
+    font-size: 0.8em;
+    gap: 0.3cm;
+}
+.right_column .project-info-line p {
+    margin: 0 0 0 0;
+}
+
+.right_column .course-title {
+    margin: 0.4cm 0 0 0;
+}
+.right_column .course {
+    margin: 0.1cm 0 0 0;
+    font-size: 0.9em;
+}
+.right_column .course-info {
+    margin: 0.1cm 0 0 0;
+    font-size: 0.8em;
+}
+
+
+
 .right_column ul {
     margin: 0.1cm 0 0 0;
     font-size: 0.8em;
