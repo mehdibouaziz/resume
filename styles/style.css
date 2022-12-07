@@ -8,6 +8,7 @@
     --color-primary: rgb(67, 139, 67);
     --color-secondary: rgb(37, 82, 37);
     --color-light: rgb(103, 165, 103);
+    --color-grey-light: rgb(99, 99, 99);
 
     --header-height: 4cm;
     --header-horizontal-padding: 0.5cm;
@@ -48,7 +49,7 @@ body{
 }
 .portrait_img {
     width: calc((var(--w100) - 2*var(--header-horizontal-padding))*0.26 );
-    border-radius: 45% 30%;
+    border-radius: 30% 15%;
 }
 
 .QR{
@@ -226,12 +227,13 @@ body{
     margin: 0.5cm 0 0 0;
 }
 
-.right_column h4{  /* job position */
+.right_column .work-title {  /* job position */
     color: var(--color-primary);
     font-size: 1em;
     font-weight: 500;
     display: inline;
 }
+
 .right_column .work-duration {
     display: inline;
     font-size: 0.9em;
@@ -241,9 +243,17 @@ body{
 .work-title-div {
     margin: 0.4cm 0 0 0;
 }
+.project-title-div {
+    margin: 0.2cm 0 0 0;
+}
+
 .work-title-link {
     text-decoration: none;
 }
+.work-title-link i,.project-title {
+    color: var(--color-grey-light) !important;
+}
+
 .link{
     vertical-align: top;
 }
@@ -280,7 +290,7 @@ body{
 
 .right_column .skills {
     margin: 0 0 0 0;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 .right_column .project-pitch {
     margin: 0 0 0.1cm 0;
