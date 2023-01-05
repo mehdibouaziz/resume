@@ -153,6 +153,13 @@ body{
 .portfolio-link {
     font-size: 0.95em !important;
 }
+.education-div a {
+    margin-bottom: 0.2cm;
+    display: block;
+}
+.education-div a:last-child {
+    margin-bottom: 0cm;
+}
 .diploma-name {
     font-size: 1.2em;
     margin-bottom: 0 !important;
@@ -338,11 +345,10 @@ body{
     mask-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 } */
 
-
 /* ----------- FOOTER ---------------- */
 .rodo {
     position: absolute;
-    top: calc(var(--a4height) - 0.8cm - var(--margins));
+    top: calc(var(--a4height) - 0.6cm - var(--margins));
     width: var(--w100);
     text-align: right;
 
