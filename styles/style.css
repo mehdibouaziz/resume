@@ -403,6 +403,10 @@ main {
   color: var(--color-secondary);
 }
 
+.li-link-bold {
+font-weight: 500;
+}
+
 .work-place-div {
   margin: 0 0 0.15cm 0;
 }
