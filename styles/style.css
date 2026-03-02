@@ -324,7 +324,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 0.3cm;
+  gap: 0.4cm;
 }
 
 .main-exp {
@@ -369,7 +369,7 @@ main {
   color: var(--text-grey-light);
 }
 .work-title-div {
-  margin: 0.4cm 0 0 0;
+  margin: 0 0 0 0;
 }
 .project-title-div {
   margin: 0;
@@ -428,7 +428,7 @@ font-weight: 500;
 }
 
 .project-div {
-    margin-bottom: 0.3cm;
+    margin-bottom: 0;
 }
 
 .right-column .skills {
@@ -436,8 +436,9 @@ font-weight: 500;
   font-size: 0.8em;
 }
 .right-column .project-pitch {
-  margin: 0 0 0.1cm 0;
-  font-size: 0.9em;
+  margin: 0.1cm 0 0 0;
+  font-size: 0.89em;
+  text-align: justify;
 }
 .right-column .project-info-line {
   display: flex;
@@ -470,6 +471,9 @@ font-weight: 500;
 .right-column li {
   margin: 0 0 0.05cm 0;
   text-align: justify;
+}
+.project-ul li {
+  margin: 0 0 0.15cm 0;
 }
 .inline {
   display: inline;
