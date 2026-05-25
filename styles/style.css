@@ -236,6 +236,10 @@ main {
     text-align: center;
 }
 
+.contact-indent {
+    padding-left: 0.65cm;
+}
+
 .contact-portfolio {
     font-size: 0.95em;
 }
